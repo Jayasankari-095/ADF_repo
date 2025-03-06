@@ -2,15 +2,29 @@
 	"name": "AzureSqlTable2",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "linked_service_new",
+			"referenceName": "AzureSqlDatabase1",
 			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"copydataschema": {
+				"type": "string"
+			},
+			"copydatatable": {
+				"type": "string"
+			}
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "schema",
-			"table": "dbb"
+			"schema": {
+				"value": "@dataset().copydataschema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().copydatatable",
+				"type": "Expression"
+			}
 		}
 	}
 }
