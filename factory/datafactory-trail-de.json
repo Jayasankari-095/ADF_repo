@@ -1,0 +1,9 @@
+{
+	"name": "datafactory-trail-de",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fc9512dc-0386-47f8-90d6-acb83c588fdd",
+		"tenantId": "2800c0a0-70e9-49be-8733-faeaa6aced99"
+	}
+}

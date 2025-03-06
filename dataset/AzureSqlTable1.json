@@ -2,15 +2,30 @@
 	"name": "AzureSqlTable1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "linked_service_new",
+			"referenceName": "AzureSqlDatabase1",
 			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"rest_api_schema": {
+				"type": "string"
+			},
+			"rest_api_table": {
+				"type": "string"
+			}
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "schema",
-			"table": "resultsofsp"
+			"schema": {
+				"value": "@dataset().rest_api_schema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().rest_api_table",
+				"type": "Expression"
+			}
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
 }
