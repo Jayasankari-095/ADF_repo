@@ -1,0 +1,81 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "datafactory-trail-de"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase3_password": {
+			"value": ""
+		},
+		"linkedService1_password": {
+			"value": ""
+		},
+		"linked_service_new_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "wed-server.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "wed-db"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "jayasankari"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "wed-server.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "wed-db"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "jayasankari"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_server": {
+			"value": "wed-server.database.windows.net"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_database": {
+			"value": "wed-db"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_userName": {
+			"value": "jayasankari"
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": " https://jsonplaceholder.typicode.com/users"
+		},
+		"linkedService1_properties_typeProperties_server": {
+			"value": "wed-server"
+		},
+		"linkedService1_properties_typeProperties_database": {
+			"value": "wed-db"
+		},
+		"linkedService1_properties_typeProperties_userName": {
+			"value": "jayasankari"
+		},
+		"linked_service_new_properties_typeProperties_server": {
+			"value": "wed-server.database.windows.net"
+		},
+		"linked_service_new_properties_typeProperties_database": {
+			"value": "wed-db"
+		},
+		"linked_service_new_properties_typeProperties_userName": {
+			"value": "jayasankari"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
